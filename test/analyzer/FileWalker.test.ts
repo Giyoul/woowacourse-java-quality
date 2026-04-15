@@ -53,4 +53,41 @@ describe('FileWalker', () => {
     fs.writeFileSync(filePath, '');
     expect(collectJavaFiles(filePath)).toHaveLength(0);
   });
+
+  it('Test.java 파일은 수집하지 않음', () => {
+    fs.writeFileSync(path.join(tmpDir, 'Game.java'), '');
+    fs.writeFileSync(path.join(tmpDir, 'GameTest.java'), '');
+    const files = collectJavaFiles(tmpDir);
+    expect(files).toHaveLength(1);
+    expect(files[0]).toContain('Game.java');
+  });
+
+  it('Tests.java 파일도 수집하지 않음', () => {
+    fs.writeFileSync(path.join(tmpDir, 'Player.java'), '');
+    fs.writeFileSync(path.join(tmpDir, 'PlayerTests.java'), '');
+    expect(collectJavaFiles(tmpDir)).toHaveLength(1);
+  });
+
+  it('test/ 디렉토리는 탐색하지 않음', () => {
+    const testDir = path.join(tmpDir, 'test');
+    fs.mkdirSync(testDir);
+    fs.writeFileSync(path.join(tmpDir, 'Game.java'), '');
+    fs.writeFileSync(path.join(testDir, 'GameTest.java'), '');
+    const files = collectJavaFiles(tmpDir);
+    expect(files).toHaveLength(1);
+    expect(files[0]).toContain('Game.java');
+  });
+
+  it('src/test/ 구조에서도 test 디렉토리는 건너뜀', () => {
+    const srcDir = path.join(tmpDir, 'src');
+    const mainDir = path.join(srcDir, 'main');
+    const testDir = path.join(srcDir, 'test');
+    fs.mkdirSync(mainDir, { recursive: true });
+    fs.mkdirSync(testDir, { recursive: true });
+    fs.writeFileSync(path.join(mainDir, 'Game.java'), '');
+    fs.writeFileSync(path.join(testDir, 'GameTest.java'), '');
+    const files = collectJavaFiles(tmpDir);
+    expect(files).toHaveLength(1);
+    expect(files[0]).toContain('Game.java');
+  });
 });
