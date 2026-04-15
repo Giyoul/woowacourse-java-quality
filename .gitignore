@@ -2,7 +2,8 @@
 design-artifacts/
 _bmad-output/
 _bmad/
-.claude/
+.claude/*
+!.claude/skills/
 node_modules/
 dist/
 coverage/
