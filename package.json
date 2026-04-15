@@ -1,6 +1,6 @@
 {
   "name": "woowacourse-quality-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP plugin that checks Java code against Woowacourse coding standards",
   "main": "dist/index.js",
   "bin": {
@@ -12,7 +12,13 @@
     "test:watch": "jest --watch",
     "start": "node dist/index.js"
   },
-  "keywords": ["mcp", "java", "quality", "woowacourse", "static-analysis"],
+  "keywords": [
+    "mcp",
+    "java",
+    "quality",
+    "woowacourse",
+    "static-analysis"
+  ],
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0"
@@ -27,7 +33,9 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "testMatch": ["**/test/**/*.test.ts"],
+    "testMatch": [
+      "**/test/**/*.test.ts"
+    ],
     "collectCoverageFrom": [
       "src/**/*.ts",
       "!src/index.ts"
