@@ -18,43 +18,6 @@ MCP(Model Context Protocol)를 지원하는 모든 AI 도구(Claude Code, Codex 
 
 ---
 
-## 마켓 등록 방법
-
-MCP 서버는 **npm 패키지**로 배포합니다. npm에 배포하면 누구나 `npx`로 바로 실행할 수 있습니다.
-
-### 1단계: npm 계정 준비
-
-```bash
-# npm 계정이 없으면 생성
-npm adduser
-
-# 이미 있으면 로그인
-npm login
-```
-
-### 2단계: 빌드 및 배포
-
-```bash
-# TypeScript 컴파일
-npm run build
-
-# npm에 배포
-npm publish
-
-# 또는 scoped 패키지로 배포 (패키지명 충돌 방지)
-# package.json의 name을 "@your-id/woowacourse-quality-checker"로 변경 후
-npm publish --access public
-```
-
-### 3단계: MCP 레지스트리 등록 (선택)
-
-공식 MCP 레지스트리에 등록하면 각 AI 도구의 마켓플레이스에서 검색됩니다.
-
-- **레지스트리**: [github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
-- Pull Request로 `README.md` 목록에 추가 요청
-
----
-
 ## 설치 방법
 
 ### Claude Code
