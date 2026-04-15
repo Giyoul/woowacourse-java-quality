@@ -1,0 +1,13 @@
+src/
+test/
+coverage/
+.DS_Store
+*.test.ts
+tsconfig.json
+jest.config.*
+_bmad-output/
+_bmad/
+design-artifacts/
+docs/
+.claude/
+.idea/

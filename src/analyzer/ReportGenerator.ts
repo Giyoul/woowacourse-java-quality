@@ -1,6 +1,7 @@
 import { AnalysisReport, FileAnalysisResult } from '../types';
 
 const MANUAL_CHECK_RULES = [
+  '한 줄에 점 하나만 (TDA 원칙) — 메서드 체이닝의 의미적 판단 필요 (예: a.getB().doC())',
   '축약 금지 (줄여 쓰지 않기) — 의미 기반 판단 필요',
   '일급 컬렉션 사용 여부 — 구조적 의미 판단 필요',
   '함수가 한 가지 일만 하는지 (단일 책임) — 의미 기반 판단 필요',

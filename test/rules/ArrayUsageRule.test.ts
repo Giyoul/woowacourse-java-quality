@@ -35,4 +35,9 @@ describe('ArrayUsageRule', () => {
     const lines = ['String msg = "use List instead of int[]";'];
     expect(rule.check(lines, 'Test.java')).toHaveLength(0);
   });
+
+  it('main 메서드 String[] args는 위반 아님', () => {
+    const lines = ['    public static void main(String[] args) {'];
+    expect(rule.check(lines, 'Test.java')).toHaveLength(0);
+  });
 });

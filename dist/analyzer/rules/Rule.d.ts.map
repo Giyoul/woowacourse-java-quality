@@ -1,0 +1,1 @@
+{"version":3,"file":"Rule.d.ts","sourceRoot":"","sources":["../../../src/analyzer/rules/Rule.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,aAAa,CAAC;AAExC,MAAM,WAAW,IAAI;IACnB,QAAQ,CAAC,MAAM,EAAE,MAAM,CAAC;IACxB,QAAQ,CAAC,QAAQ,EAAE,MAAM,CAAC;IAC1B,KAAK,CAAC,KAAK,EAAE,MAAM,EAAE,EAAE,QAAQ,EAAE,MAAM,GAAG,SAAS,EAAE,CAAC;CACvD"}

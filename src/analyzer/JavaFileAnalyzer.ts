@@ -9,7 +9,6 @@ import { MethodLengthRule } from './rules/MethodLengthRule';
 import { IndentDepthRule } from './rules/IndentDepthRule';
 import { ArrayUsageRule } from './rules/ArrayUsageRule';
 import { GetterSetterRule } from './rules/GetterSetterRule';
-import { DotsPerLineRule } from './rules/DotsPerLineRule';
 import { InstanceVariablesRule } from './rules/InstanceVariablesRule';
 import { UiSeparationRule } from './rules/UiSeparationRule';
 import { PrimitiveWrappingRule } from './rules/PrimitiveWrappingRule';
@@ -22,7 +21,6 @@ const ALL_RULES: Rule[] = [
   new IndentDepthRule(),
   new ArrayUsageRule(),
   new GetterSetterRule(),
-  new DotsPerLineRule(),
   new InstanceVariablesRule(),
   new UiSeparationRule(),
   new PrimitiveWrappingRule(),
