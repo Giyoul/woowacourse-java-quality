@@ -3,3 +3,7 @@ design-artifacts/
 _bmad-output/
 _bmad/
 .claude/
+node_modules/
+dist/
+coverage/
+.DS_Store

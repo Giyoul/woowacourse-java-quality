@@ -1,1 +1,0 @@
-{"version":3,"file":"lineUtils.d.ts","sourceRoot":"","sources":["../../../src/analyzer/rules/lineUtils.ts"],"names":[],"mappings":"AAAA;;;GAGG;AACH,wBAAgB,uBAAuB,CAAC,IAAI,EAAE,MAAM,GAAG,MAAM,CAE5D;AAkBD;;GAEG;AACH,qBAAa,mBAAmB;IAC9B,OAAO,CAAC,kBAAkB,CAAS;IAEnC,SAAS,CAAC,IAAI,EAAE,MAAM,GAAG,OAAO;CAgBjC"}
