@@ -4,6 +4,8 @@
 
 MCP(Model Context Protocol)를 지원하는 모든 AI 도구(Claude Code, Codex CLI, Cursor, Windsurf 등)에서 설치해 사용할 수 있습니다.
 
+> ### skill로 사용하고 싶다면, .claude/skills/woowacourse-review 를 직접 가져가시면 됩니다.
+
 ---
 
 ## 이걸 왜 쓰나요?
@@ -47,7 +49,6 @@ AI에게 "코드 규칙 확인해줘"라고 물으면 잘 동작하는 것처럼
 
 ## 목차
 
-- [마켓 등록 방법](#마켓-등록-방법)
 - [설치 방법](#설치-방법)
 - [사용 방법](#사용-방법)
 - [검증 항목](#검증-항목)
